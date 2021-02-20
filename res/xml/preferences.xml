@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<CheckBoxPreference
+		android:key="status"
+		android:title="Enable/Disable"
+		android:summary="Enable or disable this app."
+		android:defaultValue="true"
+		>
+		<!--  -->
+	</CheckBoxPreference>
+	
+	<ListPreference
+		android:key="frequency"
+		android:title="Frequency"
+		android:entries="@array/list_entries_frequency"
+		android:entryValues="@array/list_values_frequency"
+		android:defaultValue="1800000"
+		android:summary="How often should auto sync be turned on?"
+		android:dependency="status">
+	</ListPreference>
+	
+	<ListPreference
+		android:key="duration"
+		android:title="Duration"
+		android:entries="@array/list_entries_duration"
+		android:entryValues="@array/list_values_duration"
+		android:defaultValue="300000"
+		android:summary="How long should the auto sync be left on for before switching back off?"
+		android:dependency="status">
+	</ListPreference>
+	
+	<CheckBoxPreference
+		android:key="vibration"
+		android:title="Vibrate"
+		android:summary="Vibrate when sync starts/stops."
+		android:defaultValue="true"
+		>
+		<!--  -->
+	</CheckBoxPreference>
+	
+	<CheckBoxPreference
+		android:key="notification"
+		android:title="Notification"
+		android:summary="Show a notification in the notification area."
+		android:defaultValue="true"
+		>
+		<!--  -->
+	</CheckBoxPreference>
+</PreferenceScreen>

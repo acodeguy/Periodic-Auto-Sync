@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:myapp="http://schemas.android.com/apk/res/"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="25dip"
+    >
+	
+	<TextView
+		android:id="@+id/textViewVersion"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Periodic Auto Sync"
+		android:textColor="#FF0000"
+		android:textSize="25dip">
+	</TextView>
+	
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="PAS will turn on auto sync periodically at pre-detetmined times for GMail, Twitter, Facebook etc, leave it on for a pre-determined amount of time and then turn it off again."
+		android:textSize="12dip">
+	</TextView>
+	
+	<TextView
+		android:id="@+id/textViewWarning"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="THIS APP REQUIRES BACKGROUND DATA TO BE TURNED ON!"
+		android:textColor="#FF0000"
+		android:visibility="gone"
+		android:textSize="20dip">
+	</TextView>
+	
+	<TextView
+		android:id="@+id/textViewPreferences"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="SETTINGS"
+		android:textColor="#00FFFF"
+		android:textSize="10dip">
+	</TextView>
+	
+	<Button
+		android:id="@+id/buttonStartNow"  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:paddingTop="10dip"
+	    android:text="(re) start now">
+	</Button>
+	
+	<Button
+		android:id="@+id/buttonStopNow"  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:paddingTop="10dip"
+	    android:text="stop now">
+	</Button>
+	
+	<Button
+		android:id="@+id/button_preferences"  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:paddingTop="10dip"
+	    android:text="preferences">
+	</Button>
+	
+	<Button
+		android:id="@+id/buttonBackgroundDataToggle"  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:paddingTop="10dip"
+	    android:visibility="gone"
+	    android:text="toggle background data">
+	</Button>
+	
+	<!-- <com.admob.android.ads.AdView
+			android:id="@+id/admob_ad"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			myapp:backgroundColor="#000000"
+			myapp:primaryTextColor="#FFFFFF"
+			myapp:secondaryTextColor="#CCCCCC" />  -->
+			
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="© 2012, ReptileSoft.com"
+		android:textColor="#00FF00"
+		android:textSize="20dip">
+	</TextView>
+	
+	<ImageButton
+		android:id="@+id/button_rs_logo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:src="@drawable/rslogo">
+	</ImageButton>
+	
+</LinearLayout>

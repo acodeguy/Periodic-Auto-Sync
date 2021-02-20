@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Periodic Auto Sync</string>
+    
+    <!-- frequency -->
+    <string-array name="list_entries_frequency">
+    	<item>15 minutes</item>
+    	<item>30 minutes</item>
+    	<item>1 hour</item>
+    	<item>2 hours</item>
+    	<item>4 hours</item>
+    </string-array>
+    
+    <string-array name="list_values_frequency">
+    	<item>900000</item>
+    	<item>1800000</item>
+    	<item>3600000</item>
+    	<item>7200000</item>
+    	<item>14400000</item>
+    </string-array>
+    
+    <!-- duration -->
+    <string-array name="list_entries_duration">
+    	<item>1 minute</item>
+    	<item>5 minutes</item>
+    	<item>10 minutes</item>
+    </string-array>
+    
+    <string-array name="list_values_duration">
+    	<item>60000</item>
+    	<item>300000</item>
+    	<item>600000</item>
+    </string-array>
+</resources>
